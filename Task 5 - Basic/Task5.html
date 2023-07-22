@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <button class="plus4" onclick="
+        cartValue = cartValue + 4;
+        console.log(`value is ${cartValue}`)
+        ">+4</button>
+    <button class="plus5" onclick="
+    cartValue += 5;
+    console.log(`value = ${cartValue}`)
+    ">+5</button>
+     <button class="remove" onclick="
+     cartValue -= 1;
+     console.log(`value = ${cartValue}`)
+     ">Remove from Cart</button>
+     <button class="minus2" onclick="
+     cartValue -= 2;
+     console.log(`value = ${cartValue}`)
+     ">-2</button>
+     <button class="minus3" onclick="
+     cartValue -= 3;
+     console.log(`value = ${cartValue}`)
+     ">-3</button>
+
+    <script>
+        let cartValue = 0
+        let name = "Chinmoy";
+        console.log(`My name is ${name}`);
+        const coffeePrice = 5;
+        const bagelPrice = 3;
+        const soupPrice = 9;
+        let cost = coffeePrice + 2*bagelPrice +soupPrice;
+        let tax =cost*0.1;
+        let totalCost = cost + tax;
+        console.log(`Cost of the food $${cost}`);
+        console.log(`tax(10%) is $${tax}`);
+        console.log(`Total Cost is $${totalCost}`);
+    </script>
+</body>
+</html>

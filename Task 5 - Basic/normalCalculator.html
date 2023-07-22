@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .calculator-container{
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cal-text-container{
+            display: flex;
+            justify-content: center;
+            width: 250px;
+        }
+        .calculator-tex{
+            color: red;
+        }
+        .row{
+            display: flex;
+            
+        }
+        button:last-child{
+            background-color: rgb(254, 160, 10) ;
+        }
+        button{
+            margin: 5px;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            border-color: none;
+            border-style: none;
+            color: white;
+            background-color:rgb(51, 51, 51);
+            font-size: 18px;
+        }
+        .clear{
+            font-size: 15px;
+        }
+        #show-calculation{
+            height: 50px;
+            width: 230px;
+            color: white;
+            background-color:rgb(51, 51, 51);
+            margin: 5px;
+            font-size: 16px;
+            padding: 6px;
+            word-wrap: break-word;
+            overflow-y: auto;
+
+        }
+
+        #show-calculation::-webkit-scrollbar{
+            width: 12px;
+
+        }
+        #show-calculation::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+            border-radius: 10px;
+            
+        }
+        #show-calculation::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(254, 160, 10, 0.678); 
+            
+        }
+    </style>
+    <title>Normal Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="cal-text-container">
+            <p class="calculator-text">
+                Calculator
+            </p>
+        </div>
+        <div id="show-calculation">
+           <p id="result"></p>
+
+        </div>
+        <div class="row">
+            <button onclick="calculation += `1`; showCal(calculation);">1</button>
+            <button onclick="calculation += `2`; showCal(calculation);">2</button>
+            <button onclick="calculation += `3`;showCal(calculation);">3</button>
+            <button onclick="calculation += ` + `; showCal(calculation);">+</button>
+        </div>
+        <div class="row">
+            <button onclick="calculation += `4`; showCal(calculation);">4</button>
+            <button onclick="calculation += `5`; showCal(calculation);">5</button>
+            <button onclick="calculation += `6`; showCal(calculation);">6</button>
+            <button onclick="calculation += ` - `; showCal(calculation);">-</button>
+        </div>
+        <div class="row">
+            <button onclick="calculation += `7`; showCal(calculation);">7</button>
+            <button onclick="calculation += `8`; showCal(calculation);">8</button>
+            <button onclick="calculation += `9`; showCal(calculation);">9</button>
+            <button onclick="calculation += ` * `; showCal(calculation);">*</button>
+        </div>
+        <div class="row">
+            <button onclick="calculation += `0`; showCal(calculation);">0</button>
+            <button onclick="calculation += `.`; showCal(calculation);">.</button>
+            <button onclick=" calculation= eval(calculation);  showCal(calculation);">=</button>
+            <button onclick="calculation += ` / `;">/</button>
+        </div>
+        <div class="row">
+            <button class="clear" onclick=" calculation=''; showCal(calculation);">Clear</button>
+        </div>
+        
+    </div>
+
+    <script>
+        let result = 0;
+        let calculation = '';
+        let showCal = function(calculation) {
+            showCalculation = document.getElementById('show-calculation');
+            showCalculation.innerHTML = calculation;
+            console.log(showCalculation)
+            console.log(calculation);
+
+        }
+    </script>
+    
+</body>
+</html>
