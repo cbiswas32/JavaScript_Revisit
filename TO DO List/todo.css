@@ -1,0 +1,49 @@
+body{
+    font-family: Roboto;
+}
+
+.to-do-header{
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+
+.todo-text-input, .todo-date-input{
+    padding-left:10px;
+    padding-right: 10px;
+    height: 50px;
+    font-size: 16px;
+}
+.add-to-do-btn{
+    padding: 18px 30px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 1px;
+}
+
+.to-do-container, .to-do-input-section{
+    width: 500px;
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+.delete-btn{
+    padding: 18px 30px;
+    background-color: rgb(192, 39, 19);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 1px;
+
+}
+.show-list-row-item{
+    display: flex;
+    
+    align-items: center;
+}

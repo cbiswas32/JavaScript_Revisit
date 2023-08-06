@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rpc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container-main">
+        <div class="title">
+            Rock Paper Scissors
+        </div>
+        <div class="input-section">
+            <button class="rock" onclick="moveLogic('rock')">
+                <img src="images/rock-emoji.png" alt="rock-img" class="move-icon">
+            </button>
+            <button class="paper" onclick="moveLogic('paper')">
+                <img src="images/paper-emoji.png" alt="rock-img" class="move-icon">
+            </button>
+            <button class="scissors" onclick="moveLogic('scissors')">
+                <img src="images/scissors-emoji.png" alt="rock-img" class="move-icon">
+            </button>
+        </div>
+        <div class="result-section">
+           
+        </div>
+        <div class="status-info-section">
+            <div class="status-info"></div>
+            
+            <button class="reset" >Reset Score</button>
+            <button class="autoplay">Auto Play</button>
+            
+        </div>
+
+        <div class="reset-confirmation-conatiner">
+            <div class="reset-popup-text">Are you sure you want to reset the score? </div>
+            <button class="yes-reset">Yes</button>
+            <button class="no-reset">No</button>
+        </div>
+    </div>
+    <script src="rpc.js"></script>
+
+</body>
+</html>
