@@ -1,0 +1,123 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);  
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/backgroung-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(74, 75, 77);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+  }
+.login-signup-container{
+    width: 80vw;
+    max-width: 320px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+}
+.sign-up-text-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+.sign-up-text{
+    color: rgb(82, 12, 161);
+    font-weight: 700;
+    font-size: 22px;
+    position: relative;
+    
+
+}
+.sign-up-text:before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    bottom: -8px;
+    left: 25%;
+    border-radius: 2px;
+    background-color:  rgb(82, 12, 161);
+}
+
+/*Input Styling*/
+.input-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.allign-input-sec{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: start;
+}
+.input-section .allign-input-sec div{
+    max-height: 65px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+.input-section .allign-input-sec div input{
+    padding: 12px 60px 12px 35px ;
+    border: none;
+    background-color:  rgba(221, 219, 219, 0.5);
+    
+    font-size: 11px;
+}
+.input-section .allign-input-sec div input::placeholder{
+    color: black;
+}
+
+.input-section .allign-input-sec div{
+    position: relative;
+}
+.input-section .allign-input-sec div i {  
+    position: absolute;  
+    left: 8px;  
+    top: 9px;  
+    color: #aaa;  
+    transition: 0.3s; 
+  }  
+/*Forget Password*/
+.forget-pass-section{
+    margin-top: -10px;
+    font-size: 10px;
+}
+  
+.lost-pass a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(82, 12, 161);
+}
+
+.button-section{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.button-section button{
+    padding: 7px 30px;
+    border: none;
+    border-radius: 25px;
+    margin: 5px;
+    font-weight: 500;
+    cursor: pointer;
+   
+}
+
+.button-section .current{
+    color: white;
+    background-color:  rgba(82, 12, 161, 0.8);
+}
+
+.hide{
+   max-height: 0px !important;
+}
