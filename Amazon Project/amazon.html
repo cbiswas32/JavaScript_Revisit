@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Link the Style Sheets. -->
+    <link rel="stylesheet" href="styles/pages/amazon.css">
+    <link rel="stylesheet" href="styles/amazon-header.css">
+ 
+</head>
+<body>
+    <header class="amazon-header-section">
+        <section class="left-section-header">
+            <a href="." class="header-link">
+                <img src="images/header/amazon-logo-white.png" alt="amazon-logo" class="amazon-logo">
+            </a>
+        </section>
+        <section class="middle-section-header">
+            <input class="js-search-bar search-bar" type="text" placeholder="Search" value="" data-testid="search-input" spellcheck="false" data-ms-editor="true">
+            <button class="js-search-button search-button" data-testid="search-button">
+                <img class="search-icon" src="images/header/search-icon.png">
+              </button>
+        </section>
+        <section class="right-section-header">
+            <a href="." class="return-order-link">
+                <span class="return-text-header">Returns</span>
+                <span class="order-text-header">& Orders</span>
+            </a>
+            <a href="" class="cart-link">
+                <img src="images/header/cart-icon.png" alt="cart-logo" class="cart-logo">
+                <div class="cart-value-header">0</div>
+                <div class="cart-text-header">Cart</div>
+            </a>
+           
+        </section>
+        <section class="right-section-header-mobile">
+            <img class="js-hamburger-menu-toggle hamburger-menu-toggle" src="images/header/hamburger-menu.png" data-testid="hamburger-menu-toggle" id="hamburger-menu-toggle">
+        </section>   
+        <div class="js-hamburger-menu-dropdown hamburger-menu-dropdown" data-testid="hamburger-menu-dropdown" id="hamburger-menu-dropdown">
+            <a class="hamburger-menu-link" href="orders">
+              Returns &amp; Orders
+            </a>
+            <a class="hamburger-menu-link" href="checkout">
+              Cart (<span class="js-cart-quantity-mobile cart-quantity-mobile" data-testid="cart-quantity-mobile">4</span>)
+            </a>
+          </div>
+    </header>
+    <script src="scripts/header.js"></script>
+</body>
+</html>
