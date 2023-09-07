@@ -20,6 +20,10 @@
     margin-top: 5px;
 
 }
+
+.left-section-header .header-link .amazon-logo-mobile{
+    display: none;
+}
 .middle-section-header{
     flex: 1;
     display: flex;
@@ -154,6 +158,15 @@
 
 
 @media (max-width: 575px){
+    .amazon-logo-mobile{
+        display: block !important;
+        width: 30px;
+        margin-top: 5px;
+    }
+    .amazon-logo{
+        display: none;
+
+    }
     .right-section-header{
         display: none;
     }
@@ -166,6 +179,10 @@
     .amazon-header-section .hamburger-menu-opened {
         height: 88px;
         
+    }
+    .middle-section-header{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     
