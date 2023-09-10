@@ -63,6 +63,14 @@ const addToCart = (e) =>{
   else{
     cart.push({productID: productID, quantity: 1});
   }
+  // array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+  let cartQantity = cart.reduce(( quan, element)=>{
+    quan += element.quantity;
+    return quan;
+  }, 0);
+  console.log(cartQantity);
+  document.querySelector('.cart-value-header').innerHTML = cartQantity;
+  document.querySelector('.cart-quantity-mobile').innerHTML = cartQantity;
   console.log(cart);
 }
 
